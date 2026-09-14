@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loks Motors — Classic Car Restorations &amp; Custom Builds</title>
+  <meta name="description" content="Loks Motors restores and re-engineers American classics from 1950–1999. Shop restored classics or configure your own custom restomod build." />
+
+  <!-- Google Fonts: Oswald (condensed headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY NAV
+       ============================================================ -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">LOKS<span> MOTORS</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <a href="#inventory" class="nav__link">Inventory</a>
+        <a href="#custom-builds" class="nav__link">Custom Builds</a>
+        <a href="#configurator" class="nav__link">Build Yours</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--outline nav__cta">Talk to Sales</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         1. HERO
+         PHOTO/VIDEO NOTE: Replace the CSS gradient background on
+         .hero with a full-bleed hero photo or looping video of a
+         finished build (e.g., <video autoplay muted loop playsinline>).
+         ============================================================ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div><!-- gradient placeholder — swap for real photo/video -->
+      <div class="hero__content container">
+        <p class="hero__kicker fade-in">Est. Loks Motors — Restoration &amp; Restomod Works</p>
+        <h1 class="hero__title fade-in">Classics.<br /><span>Re-Engineered.</span></h1>
+        <p class="hero__tagline fade-in">American icons from 1950–1999, restored and reimagined.</p>
+        <div class="hero__actions fade-in">
+          <a href="#inventory" class="btn btn--primary">View Inventory</a>
+          <a href="#configurator" class="btn btn--outline">Build Your Custom</a>
+        </div>
+      </div>
+      <a href="#lines" class="hero__scroll" aria-label="Scroll down">▼</a>
+    </section>
+
+    <!-- ============================================================
+         2. TWO BUSINESS LINES
+         ============================================================ -->
+    <section class="section lines" id="lines">
+      <div class="container">
+        <p class="section__kicker fade-in">Two Ways to Own a Legend</p>
+        <h2 class="section__title fade-in">Choose Your Lane</h2>
+
+        <div class="lines__grid">
+          <!-- Restored Classics card -->
+          <article class="line-card fade-in" id="restored-classics">
+            <!-- PHOTO NOTE: replace .line-card__media gradient with photo of a showroom-ready classic -->
+            <div class="line-card__media line-card__media--classics" aria-hidden="true">
+              <span class="line-card__badge">For Sale Now</span>
+            </div>
+            <div class="line-card__body">
+              <h3>Restored Classics</h3>
+              <p>Hand-picked survivors, sourced and refreshed by our team. Minor repairs, full inspection, detailed and road-ready. Turn the key and drive home a piece of history — no waiting list.</p>
+              <a href="#inventory" class="link-arrow">Browse the current inventory →</a>
+            </div>
+          </article>
+
+          <!-- Custom Builds card -->
+          <article class="line-card fade-in" id="custom-builds">
+            <!-- PHOTO NOTE: replace .line-card__media gradient with photo of a restomod build in the shop -->
+            <div class="line-card__media line-card__media--custom" aria-hidden="true">
+              <span class="line-card__badge line-card__badge--accent">Built to Order</span>
+            </div>
+            <div class="line-card__body">
+              <h3>Custom Builds</h3>
+              <p>The full restomod treatment: a classic body over modern mechanicals. Crate engines, modern suspension, climate control, CarPlay — vintage soul, new-car reliability, built to your spec.</p>
+              <a href="#configurator" class="link-arrow">Configure your build →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. INVENTORY GRID
+         PHOTO NOTE: each .car-card__media is a gradient placeholder.
+         Swap for real photography (recommend 3:2 crops, ~1200px wide).
+         PRICE NOTE: prices are hard-coded in the markup below — edit freely.
+         ============================================================ -->
+    <section class="section inventory" id="inventory">
+      <div class="container">
+        <p class="section__kicker fade-in">Current Inventory</p>
+        <h2 class="section__title fade-in">Restored &amp; Ready</h2>
+
+        <div class="inventory__grid">
+
+          <article class="car-card fade-in">
+            <div class="car-card__media grad-1">
+              <span class="car-card__name">Mustang<br />Fastback</span>
+              <span class="badge badge--available">Available</span>
+            </div>
+            <div class="car-card__body">
+              <h3>1967 Ford Mustang Fastback</h3>
+              <p class="car-card__price">$142,500</p>
+              <a href="#contact" class="btn btn--small btn--outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="car-card fade-in">
+            <div class="car-card__media grad-2">
+              <span class="car-card__name">Chevy<br />Chevelle SS</span>
+              <span class="badge badge--available">Available</span>
+            </div>
+            <div class="car-card__body">
+              <h3>1970 Chevrolet Chevelle SS</h3>
+              <p class="car-card__price">$98,000</p>
+              <a href="#contact" class="btn btn--small btn--outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="car-card fade-in">
+            <div class="car-card__media grad-3">
+              <span class="car-card__name">Ford<br />Bronco</span>
+              <span class="badge badge--restoration">In Restoration</span>
+            </div>
+            <div class="car-card__body">
+              <h3>1976 Ford Bronco</h3>
+              <p class="car-card__price">$156,000</p>
+              <a href="#contact" class="btn btn--small btn--outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="car-card fade-in">
+            <div class="car-card__media grad-4">
+              <span class="car-card__name">Camaro<br />SS</span>
+              <span class="badge badge--sold">Sold</span>
+            </div>
+            <div class="car-card__body">
+              <h3>1969 Chevrolet Camaro SS</h3>
+              <p class="car-card__price">$168,500</p>
+              <a href="#contact" class="btn btn--small btn--outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="car-card fade-in">
+            <div class="car-card__media grad-5">
+              <span class="car-card__name">Grand<br />National</span>
+              <span class="badge badge--available">Available</span>
+            </div>
+            <div class="car-card__body">
+              <h3>1987 Buick Grand National</h3>
+              <p class="car-card__price">$89,900</p>
+              <a href="#contact" class="btn btn--small btn--outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="car-card fade-in">
+            <div class="car-card__media grad-6">
+              <span class="car-card__name">Land Cruiser<br />FZJ80</span>
+              <span class="badge badge--restoration">In Restoration</span>
+            </div>
+            <div class="car-card__body">
+              <h3>1994 Toyota Land Cruiser FZJ80</h3>
+              <p class="car-card__price">$112,000</p>
+              <a href="#contact" class="btn btn--small btn--outline">View Details</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. BUILD CONFIGURATOR
+         Base models & upgrade options/prices are defined in js/app.js
+         (CONFIG object at top of file) — edit there, markup is generated.
+         ============================================================ -->
+    <section class="section configurator" id="configurator">
+      <div class="container">
+        <p class="section__kicker fade-in">Build Yours</p>
+        <h2 class="section__title fade-in">The Loks Configurator</h2>
+        <p class="section__lede fade-in">Pick a platform. Spec it your way. Get a real estimate in seconds.</p>
+
+        <div class="config fade-in">
+          <!-- Step indicators -->
+          <ol class="config__steps" id="configSteps">
+            <li class="config__step is-active" data-step="1"><span>1</span> Base Model</li>
+            <li class="config__step" data-step="2"><span>2</span> Upgrades</li>
+            <li class="config__step" data-step="3"><span>3</span> Request Build</li>
+          </ol>
+
+          <!-- Step 1: base model radio cards (rendered by JS) -->
+          <div class="config__panel is-active" data-panel="1">
+            <div class="config__models" id="configModels"><!-- JS renders base model cards here --></div>
+            <div class="config__nav">
+              <span></span>
+              <button class="btn btn--primary" id="toStep2" disabled>Next: Upgrades →</button>
+            </div>
+          </div>
+
+          <!-- Step 2: upgrade checkboxes (rendered by JS) -->
+          <div class="config__panel" data-panel="2">
+            <div class="config__upgrades" id="configUpgrades"><!-- JS renders upgrade groups here --></div>
+            <div class="config__nav">
+              <button class="btn btn--outline" id="backTo1">← Back</button>
+              <button class="btn btn--primary" id="toStep3">Next: Request Build →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: summary + quote form -->
+          <div class="config__panel" data-panel="3">
+            <div class="config__summary" id="configSummary"><!-- JS renders build summary here --></div>
+
+            <!-- QUOTE FORM: currently client-side only.
+                 TODO: wire up to Formspree (https://formspree.io) or a backend —
+                 set the form action + method="POST" and remove the JS preventDefault. -->
+            <form class="quote-form" id="quoteForm" novalidate>
+              <div class="quote-form__row">
+                <label>Name
+                  <input type="text" name="name" required placeholder="Your name" />
+                </label>
+                <label>Email
+                  <input type="email" name="email" required placeholder="you@example.com" />
+                </label>
+              </div>
+              <div class="quote-form__row">
+                <label>Phone
+                  <input type="tel" name="phone" placeholder="(555) 555-5555" />
+                </label>
+              </div>
+              <label>Message
+                <textarea name="message" rows="4" placeholder="Tell us about your dream build…"></textarea>
+              </label>
+              <div class="config__nav">
+                <button type="button" class="btn btn--outline" id="backTo2">← Back</button>
+                <button type="submit" class="btn btn--primary">Request This Build</button>
+              </div>
+              <p class="quote-form__success" id="quoteSuccess" hidden>
+                ✓ Request received! Our build team will reach out within one business day.
+              </p>
+            </form>
+          </div>
+
+          <!-- Sticky running total bar -->
+          <div class="config__totalbar" id="configTotalBar">
+            <div>
+              <span class="config__total-label">Estimated Build Total</span>
+              <span class="config__total-model" id="totalModel">No base model selected</span>
+            </div>
+            <span class="config__total" id="configTotal">$0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. PROCESS
+         ============================================================ -->
+    <section class="section process" id="process">
+      <div class="container">
+        <p class="section__kicker fade-in">How It Works</p>
+        <h2 class="section__title fade-in">From Handshake to Highway</h2>
+
+        <div class="process__grid">
+          <div class="process__step fade-in">
+            <span class="process__num">01</span>
+            <h3>Consult</h3>
+            <p>We sit down, talk goals, budget, and the car you've always wanted. Every build starts with a conversation.</p>
+          </div>
+          <div class="process__step fade-in">
+            <span class="process__num">02</span>
+            <h3>Source</h3>
+            <p>Our network hunts down the right donor body — straight, honest metal from 1950–1999, vetted by our team.</p>
+          </div>
+          <div class="process__step fade-in">
+            <span class="process__num">03</span>
+            <h3>Build</h3>
+            <p>Teardown, fabrication, drivetrain, paint, and trim. You get photo updates at every milestone.</p>
+          </div>
+          <div class="process__step fade-in">
+            <span class="process__num">04</span>
+            <h3>Deliver</h3>
+            <p>Shakedown miles, final QC, and white-glove delivery to your door — anywhere in the country.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. ABOUT
+         PHOTO NOTE: .about__media gradient placeholder — swap for a
+         shop/team photo.
+         ============================================================ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media fade-in" aria-hidden="true"></div>
+        <div class="about__body">
+          <p class="section__kicker fade-in">About Loks Motors</p>
+          <h2 class="section__title fade-in">Obsessed With the Golden Era</h2>
+          <p class="fade-in">Loks Motors was founded on a simple belief: the best-looking cars ever made were built between 1950 and 1999 — and they deserve to be driven, not parked. We restore honest classics for buyers who want turn-key nostalgia, and we build ground-up restomods for those who want vintage steel with modern muscle underneath.</p>
+          <p class="fade-in">Every car that leaves our shop is sorted, documented, and road-tested. No trailer queens. No shortcuts.</p>
+          <div class="about__stats fade-in">
+            <div><strong>120+</strong><span>Cars Restored</span></div>
+            <div><strong>35</strong><span>Custom Builds</span></div>
+            <div><strong>50</strong><span>States Delivered</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CONTACT
+         ============================================================ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section__kicker fade-in">Get In Touch</p>
+        <h2 class="section__title fade-in">Talk to Sales</h2>
+        <div class="contact__grid fade-in">
+          <div class="contact__item">
+            <h3>Visit</h3>
+            <p>1234 Motorworks Drive<br />Anytown, USA 00000</p><!-- PLACEHOLDER address -->
+          </div>
+          <div class="contact__item">
+            <h3>Call</h3>
+            <p><a href="tel:+15555550123">(555) 555-0123</a></p><!-- PLACEHOLDER phone -->
+          </div>
+          <div class="contact__item">
+            <h3>Email</h3>
+            <p><a href="mailto:sales@loksmotors.com">sales@loksmotors.com</a></p><!-- PLACEHOLDER email -->
+          </div>
+          <div class="contact__item">
+            <h3>Hours</h3>
+            <p>Mon–Fri 8a–6p<br />Sat by appointment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__logo">LOKS<span> MOTORS</span></p>
+        <p class="footer__tag">Classics. Re-Engineered.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="#inventory">Inventory</a>
+        <a href="#custom-builds">Custom Builds</a>
+        <a href="#configurator">Build Yours</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <!-- SOCIAL NOTE: replace # with real profile URLs -->
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Loks Motors. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
